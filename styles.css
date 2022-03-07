@@ -16,12 +16,12 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    :root{
+    /* :root{
         --color: #fff;
         --body-bg: #121213;
         --border: #424244;
         --header-shadow: #040404;
-    }
+    } */
 }
 
 ::-webkit-scrollbar {
@@ -74,7 +74,7 @@ p {
 }
 main {
     margin: 0 auto;
-    min-height: calc(100vh - 60px);
+    height: calc(100vh - 85px);
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -146,7 +146,7 @@ input {
     max-width: calc( 100% - 500px);
     width: 100%;
     padding: 20px;
-    max-height: calc( 100vh - 65px);
+    max-height: calc( 100vh - 95px);
     overflow-y: auto;
     margin-top: 2px;
     position: relative;
@@ -204,9 +204,33 @@ input {
     background-color:var(--correct);
 }
 
+footer {
+    text-align: center;
+    background-color: #0003;
+    padding: 5px;
+}
+
+footer a{
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--color)
+}
 
 /* Ipad L*/
 @media (max-width: 1200px) {
+    h1 {
+        font-size: 18px;
+    }
+    p{
+        font-size: 12px;
+    }
+    label{
+        font-size: 14px;
+    }
+    input{
+        height: 40px;
+        font-size: 18px;
+    }
    .word{
        margin: 8px;
    }
@@ -215,23 +239,24 @@ input {
 /* Ipad P*/
 @media (max-width: 900px) {
    main{
-       display:block 
+       display:block ;
+        height: auto;
    }
    form{
        max-width: 100%;
-       padding: 20px ;
+       padding: 15px 20px ;
    }
    #results{
         max-width: 100%;
-        max-height: calc( 100vh - 395px);
+        max-height: calc( 100vh - 440px);
         text-align:center;
     }
 }
     
     
-@media (orientation: landscape) and (max-width: 900px) {
-        #results{
-            max-height: 3000px;
+@media (orientation: landscape) and (max-width: 900px) { 
+       #results{
+            max-height: 10000px;
             overflow: visible;
    }
 }
