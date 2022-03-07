@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+        <link rel="manifest" href="./images/site.webmanifest">
+        <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#0cb808">
+        <meta name="msapplication-TileColor" content="#0cb808">
+        <meta name="theme-color" content="#ffffff">
+
+
+    <title>Wordle Helper</title>
+</head>
+
+<body>
+    <header>  
+        <img class="logo" src="./logo.png" alt="Wordle Helper">
+        Wordle Helper 
+    </header>
+
+    <main>
+
+        <form>
+
+
+            <!-- Correct -->
+            <div class="form-group">
+                <label>Correct <span> (Letters in correct position) </span> </label>
+                
+                <div class="form-flex" id="form-correct">
+                    <input type="text" data-index="0">
+                    <input type="text" data-index="1">
+                    <input type="text" data-index="2">
+                    <input type="text" data-index="3">
+                    <input type="text" data-index="4">
+                </div>
+
+            </div>
+            
+            <!-- Present -->
+            <div class="form-group">
+                <label>Present <span> (Letters anywhere in word but not in correct position) </span> </label>
+                <input id="input-present" autocomplete="off" type="text" placeholder="Type present letters....">
+            </div>
+            
+            <!-- Absent -->
+            <div class="form-group">
+                <label>Absent <span> (Letters can be excluded from the word) </span> </label>
+                <input id="input-absent" autocomplete="off"  type="text" placeholder="Type excluded letters..">
+            </div>
+
+        </form>
+
+        <section id="results"></section>
+    </main>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
