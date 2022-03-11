@@ -5,6 +5,31 @@ let excludeLetters;
 let correctLetters = [null, null, null, null, null];
 const inPresent = document.getElementById('input-present');
 const inAbsent = document.getElementById('input-absent');
+const FIRST_ENTRY = [
+    'ratio',
+    'mends',
+    'lucky',
+
+    'junks',
+    'whomp',
+    'calyx',
+    'fritz',
+
+    'roate',
+    'raise',
+    'rakes',
+    'soare',
+    'dingo',
+    'beast',
+    'beaks',
+    'siren',
+    'stare',
+    'doing',
+    'mango',
+    'faint',
+    'rival',
+
+];
 
 
 const generateSuggestion = (collection) =>{
@@ -134,4 +159,4 @@ document.querySelectorAll("#form-correct input").forEach(correctInput => {
 
 
 // First Load the
-generateSuggestion(COLLECTION)
+generateSuggestion(FIRST_ENTRY)
