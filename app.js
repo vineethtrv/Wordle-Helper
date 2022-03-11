@@ -15,6 +15,13 @@ const FIRST_ENTRY = [
     'calyx',
     'fritz',
 
+    'tubes',
+    'fling',
+    'champ',
+    'wordy',
+
+    'stone',
+    'audio',
     'roate',
     'raise',
     'rakes',
